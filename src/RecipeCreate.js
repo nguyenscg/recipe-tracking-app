@@ -25,9 +25,9 @@ function RecipeCreate({recipes, createRecipe}) {
   
   const handleNameChange = (event) => setName(event.target.value);
   const handleCuisineChange = (event) => setCuisine(event.target.value);
-  const photoCuisineChange = (event) => setCuisine(event.target.value);
-  const ingredientsChange = (event) => setIngredients(event.target.value);
-  const preparationChange = (event) => setPreparation(event.target.value);
+  const handlePhotoChange = (event) => setCuisine(event.target.value);
+  const handleIngredientsChange = (event) => setIngredients(event.target.value);
+  const handlePreparationChange = (event) => setPreparation(event.target.value);
   
   
   return (
@@ -47,11 +47,34 @@ function RecipeCreate({recipes, createRecipe}) {
               <input 
                 name="cuisine"
                 placeholder="Cuisine"
+                onChange={handleCuisineChange}
+                value={cuisine}
                 />
             </td>
-            <td><input name="photo" placeholder="URL"/></td>
-            <td><textarea name="ingredients" placeholder="Ingredients"/></td>
-            <td><textarea name="preparation" placeholder="Preparation"/></td>
+            <td>
+              <input 
+                name="photo" 
+                placeholder="URL"
+                onChange={handlePhotoChange}
+                value={photo}
+                />
+            </td>
+            <td>
+              <textarea 
+                name="ingredients" 
+                placeholder="Ingredients"
+                onChange={handleIngredientsChange}
+                value={ingredients}
+                />
+            </td>
+            <td>
+              <textarea 
+                name="preparation" 
+                placeholder="Preparation"
+                onChange={handlePreparationChange}
+                value={preparation}
+                />
+            </td>
             <td>
               <button type="submit" onClick={createRecipe}>Create</button>
             </td>
