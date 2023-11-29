@@ -5,6 +5,17 @@ function RecipeCreate({recipes, createRecipe}) {
   // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
   // TODO: Add the required input and textarea form elements.
   // TODO: Add the required submit and change handlers
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    createRecipe({name, cuisine, photo, ingredients, preparation});
+    // clears form contents each time submitted
+    setName("");
+    setCuisine("");
+    setPhoto("");
+    setIngredients("");
+    setPreparation("");
+  };
   
   return (
     <form name="create">
