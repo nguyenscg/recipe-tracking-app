@@ -24,7 +24,8 @@ function RecipeList({recipes, deleteRecipe}) {
             <tr key={id}>
               <td>{recipe.name}</td>
               <td>{recipe.cuisine}</td>
-              <td>{recipe.photo}</td>
+              <td>
+                <img src={recipe.photo} alt={recipe.name}/></td>
               <td>{recipe.ingredients}</td>
               <td>{recipe.preparation}</td>
               <td>
