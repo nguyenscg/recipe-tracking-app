@@ -25,7 +25,7 @@ function RecipeCreate({recipes, createRecipe}) {
   
   const handleNameChange = (event) => setName(event.target.value);
   const handleCuisineChange = (event) => setCuisine(event.target.value);
-  const handlePhotoChange = (event) => setCuisine(event.target.value);
+  const handlePhotoChange = (event) => setPhoto(event.target.value);
   const handleIngredientsChange = (event) => setIngredients(event.target.value);
   const handlePreparationChange = (event) => setPreparation(event.target.value);
   
