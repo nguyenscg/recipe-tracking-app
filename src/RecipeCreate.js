@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function RecipeCreate() {
+function RecipeCreate({recipes, createRecipe}) {
 
   // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
   // TODO: Add the required input and textarea form elements.
@@ -11,7 +11,11 @@ function RecipeCreate() {
       <table>
         <tbody>
           <tr>
-            <td></td>
+            <td><input name="name"/></td>
+            <td><input name="cuisine"/></td>
+            <td><input name="photo"/></td>
+            <td><textarea name="ingredients"/></td>
+            <td><textarea name="preparation"/></td>
             <td>
               <button type="submit">Create</button>
             </td>
