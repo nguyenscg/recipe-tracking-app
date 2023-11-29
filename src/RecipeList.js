@@ -27,11 +27,11 @@ function RecipeList({recipes, deleteRecipe}) {
               <td>{recipe.photo}</td>
               <td>{recipe.ingredients}</td>
               <td>{recipe.preparation}</td>
+              <td>
+                <button name="delete" onClick={deleteRecipe}>Delete</button>
+              </td>
             </tr>
           ))}
-          <td>
-            <button name="delete" onClick={deleteRecipe}>Delete</button>
-          </td>
         </tbody>
       </table>
     </div>
