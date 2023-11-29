@@ -31,7 +31,7 @@ function RecipeCreate({recipes, createRecipe}) {
   
   
   return (
-    <form name="create">
+    <form name="create" onSubmit={handleSubmit}>
       <table>
         <tbody>
           <tr>
@@ -53,7 +53,7 @@ function RecipeCreate({recipes, createRecipe}) {
             </td>
             <td>
               <input 
-                name="photo" 
+                name="photo"
                 placeholder="URL"
                 onChange={handlePhotoChange}
                 value={photo}
