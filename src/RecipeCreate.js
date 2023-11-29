@@ -11,13 +11,13 @@ function RecipeCreate({recipes, createRecipe}) {
       <table>
         <tbody>
           <tr>
-            <td><input name="name"/></td>
-            <td><input name="cuisine"/></td>
-            <td><input name="photo"/></td>
-            <td><textarea name="ingredients"/></td>
-            <td><textarea name="preparation"/></td>
+            <td><input name="name" placeholder="Name"/></td>
+            <td><input name="cuisine" placeholder="Cuisine"/></td>
+            <td><input name="photo" placeholder="URL"/></td>
+            <td><textarea name="ingredients" placeholder="Ingredients"/></td>
+            <td><textarea name="preparation" placeholder="Preparation"/></td>
             <td>
-              <button type="submit">Create</button>
+              <button type="submit" onClick={createRecipe}>Create</button>
             </td>
           </tr>
         </tbody>
