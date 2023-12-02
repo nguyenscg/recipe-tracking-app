@@ -12,5 +12,5 @@ The app will display a recipe's name, cuisine, photo, ingredients, preparation i
 - Install packages via NPM
 
 ## Delicious Food Recipes
-![homepage](../src/images/deliciousfoods.png)
-![create](../src/images/create-recipe.png)
+![homepage](/src/images/deliciousfoods.png)
+![create](/src/images/create-recipe.png)
