@@ -70,3 +70,6 @@ table {
 
 
 /* Column size for tbody */
+tbody tr:nth-child(odd) {
+  background-color: #fff0c7;
+}
