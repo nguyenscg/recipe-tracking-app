@@ -31,7 +31,7 @@ function RecipeCreate({recipes, createRecipe}) {
   
   
   return (
-    <form name="create">
+    <form name="create" onSubmit={handleSubmit}>
       <table>
         <tbody>
           <tr>
@@ -76,7 +76,7 @@ function RecipeCreate({recipes, createRecipe}) {
                 />
             </td>
             <td>
-              <button type="submit" onSubmit={handleSubmit}>Create</button>
+              <button type="submit">Create</button>
             </td>
           </tr>
         </tbody>
