@@ -67,7 +67,12 @@ table {
 }
 
 /* Column Size for thead */
-
+th:nth-child(1), td:nth-child(1), th:nth-child(2), td:nth-child(2) {
+  width: 30%;
+}
+th:nth-child(n + 3), td:nth-child(n + 3) {
+  width: 10%;
+}
 
 /* Column size for tbody */
 tbody tr:nth-child(odd) {
