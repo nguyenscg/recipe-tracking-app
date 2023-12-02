@@ -17,7 +17,7 @@ function App() {
   
   const createRecipe = (newRecipe) => {
     setRecipes((currentRecipes) => [
-      newRecipe, ...currentRecipes,
+      ...currentRecipes, newRecipe,
     ]);
   };
   
