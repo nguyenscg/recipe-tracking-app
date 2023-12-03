@@ -41,7 +41,7 @@ function RecipeCreate({recipes, createRecipe}) {
                 placeholder="Name" 
                 onChange={handleNameChange} 
                 value={name}
-                />
+                required />
             </td>
             <td>
               <input 
@@ -49,7 +49,7 @@ function RecipeCreate({recipes, createRecipe}) {
                 placeholder="Cuisine"
                 onChange={handleCuisineChange}
                 value={cuisine}
-                />
+                required />
             </td>
             <td>
               <input 
@@ -57,7 +57,7 @@ function RecipeCreate({recipes, createRecipe}) {
                 placeholder="URL"
                 onChange={handlePhotoChange}
                 value={photo}
-                />
+                required />
             </td>
             <td>
               <textarea 
@@ -65,7 +65,7 @@ function RecipeCreate({recipes, createRecipe}) {
                 placeholder="Ingredients"
                 onChange={handleIngredientsChange}
                 value={ingredients}
-                />
+                required />
             </td>
             <td>
               <textarea 
@@ -73,7 +73,7 @@ function RecipeCreate({recipes, createRecipe}) {
                 placeholder="Preparation"
                 onChange={handlePreparationChange}
                 value={preparation}
-                />
+                required />
             </td>
             <td>
               <button type="submit">Create</button>
