@@ -11,7 +11,7 @@ function App() {
   // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
   
   const deleteRecipe = (idToDelete) => {
-    setRecipes((currentRecipes) => currentRecipes.filter((recipe) => recipe.id !== idToDelete)
+    setRecipes((currentRecipes) => currentRecipes.filter((recipe, index) => index !== idToDelete)
     );
   };
   
